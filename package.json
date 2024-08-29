@@ -26,7 +26,8 @@
   "module": "dist/es/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "keywords": [
     "react",
