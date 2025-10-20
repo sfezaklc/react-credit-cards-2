@@ -1,6 +1,6 @@
 {
   "name": "react-credit-cards-2",
-  "version": "1.0.3",
+  "version": "1.0.4-react19.0",
   "description": "Beautiful credit cards for your payment forms",
   "author": "AMARO Fashion <tech@amaro.com>",
   "contributors": [
@@ -36,7 +36,8 @@
     "payment"
   ],
   "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "dependencies": {
     "credit-card-type": "^9.1.0",
@@ -115,6 +116,7 @@
     "build:code": "rollup -c",
     "build:styles": "node tools/build-styles",
     "build": "npm run clean && npm run build:code && npm run build:styles",
+    "prepare": "npm run build",
     "watch": "npm run build && watch-run -p 'src/**/.{ts,tsx,scss}' npm run build",
     "clean": "rimraf dist/ es/ lib/ coverage/ .tmp/",
     "lint": "eslint --max-warnings=0 src",
